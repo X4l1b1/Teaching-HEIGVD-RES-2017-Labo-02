@@ -10,14 +10,14 @@ package ch.heigvd.res.labs.roulette.net.protocol;
 public class InfoCommandResponse {
 
   private String protocolVersion;
-  private int numberOfStudents;
+  private int numberOfNewStudents;
 
   public InfoCommandResponse() {
   }
 
-  public InfoCommandResponse(String protocolVersion, int numberOfStudents) {
+  public InfoCommandResponse(String protocolVersion, int numberOfNewStudents) {
     this.protocolVersion = protocolVersion;
-    this.numberOfStudents = numberOfStudents;
+    this.numberOfNewStudents = numberOfNewStudents;
   }
 
   public String getProtocolVersion() {
@@ -28,12 +28,12 @@ public class InfoCommandResponse {
     this.protocolVersion = protocolVersion;
   }
 
-  public int getNumberOfStudents() {
-    return numberOfStudents;
+  public int getNumberOfNewStudents() {
+    return numberOfNewStudents;
   }
 
-  public void setNumberOfStudents(int numberOfStudents) {
-    this.numberOfStudents = numberOfStudents;
+  public void setNumberOfNewStudents(int numberOfStudents) {
+    this.numberOfNewStudents = numberOfStudents;
   }
 
 }

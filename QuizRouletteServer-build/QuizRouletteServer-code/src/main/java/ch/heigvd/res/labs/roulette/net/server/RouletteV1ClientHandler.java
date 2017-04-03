@@ -66,6 +66,7 @@ public class RouletteV1ClientHandler implements IClientHandler {
         case RouletteV1Protocol.CMD_LOAD:
           writer.println(RouletteV1Protocol.RESPONSE_LOAD_START);
           writer.flush();
+          reader.readLine();
           store.importData(reader);
           writer.println(RouletteV1Protocol.RESPONSE_LOAD_DONE);
           writer.flush();
